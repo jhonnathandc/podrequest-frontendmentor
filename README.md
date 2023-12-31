@@ -2,14 +2,14 @@
 
 This project is part of the challenges of [FrontEnd Mentor](https://www.frontendmentor.io/).
 
-[Access the website here.](https://profilecard-frontendmentor-jdc.vercel.app/)
+[Access the deploy here.](https://podrequest-frontendmentor.vercel.app/)
 <br>
 <br>
-[Access the challenge here.](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ)
+[Access the challenge here.](https://www.frontendmentor.io/challenges/pod-request-access-landing-page-eyTmdkLSG)
 
 ## Demonstration
+![Desktop + Mobile - 5](https://github.com/jhonnathandc/podrequest-frontendmentor/assets/82620787/94c7e660-3723-4eae-acc7-0d5a0d8ece6e)
 
-![Desktop + Mobile - 5](https://github.com/jhonnathandc/profilecard-frontendmentor/assets/82620787/18caa269-2a66-430f-9a8e-d60d8f337d96)
 
 ## More information
 
@@ -17,10 +17,11 @@ It was built as proposed in the design, using:
 
 - HTML
 - CSS
+- JavaScript
 
 ## Stack
 
-**Front-end:** HTML, CSS
+**Front-end:** HTML, CSS, JavaScript
 
 ## License
 
