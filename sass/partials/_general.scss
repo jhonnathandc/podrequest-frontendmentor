@@ -1,0 +1,237 @@
+body {
+  background-color: $blue-dark;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 23.2rem;
+    height: 10.4rem;
+    background-image: url("../../assets/desktop/bg-pattern-dots.svg");
+    position: absolute;
+    right: 0;
+    bottom: 7.8rem;
+
+    @include responsive(m) {
+      left: 3rem;
+      bottom: 0;
+    }
+
+    @include responsive(s) {
+      left: 3rem;
+      bottom: 0;
+    }
+
+    @include responsive(xs) {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 88.8rem;
+    height: 64rem;
+    background-image: url("../../assets/desktop/image-host.jpg");
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 0;
+    z-index: -2;
+
+    @include responsive(m) {
+      width: 49.1rem;
+      height: 76.7rem;
+      background-image: url("../../assets/tablet/image-host.jpg");
+      transform: translateY(0);
+      top: 0;
+      right: 0;
+    }
+
+    @include responsive(s) {
+      width: 49.1rem;
+      height: 76.7rem;
+      background-image: url("../../assets/tablet/image-host.jpg");
+      transform: translateY(0);
+      top: 0;
+      right: 0;
+    }
+
+    @include responsive(xs) {
+      width: 100%;
+      height: 100vh;
+      background-image: url("../../assets/mobile/image-host.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: opacity(0.1);
+    }
+  }
+
+  .header {
+    padding-top: 10.2rem;
+    padding-bottom: 4.8rem;
+
+    @include responsive(xs) {
+      padding-top: 6.2rem;
+      padding-bottom: 5.7rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .main {
+    max-width: 72.3rem;
+    background-color: $blue-dark;
+    padding: 8.8rem 5.8rem 0 0;
+    height: 100%;
+
+    @include responsive(xs) {
+      background-color: transparent;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    h1 {
+      margin-bottom: 2.4rem;
+
+      @include responsive(xs) {
+        text-align: center;
+        margin-bottom: 1.6rem;
+        order: 1;
+      }
+    }
+
+    p {
+      max-width: 44.5rem;
+      margin-bottom: 4rem;
+
+      @include responsive(xs) {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 3.3rem;
+        order: 2;
+      }
+    }
+
+    .form {
+      position: relative;
+      max-width: 42.7rem;
+      margin-bottom: 6.4rem;
+
+      @include responsive(xs) {
+        max-width: 100%;
+        order: 4;
+        margin-bottom: 0rem;
+
+        &.error {
+          input {
+            margin-bottom: 3.2rem;
+          }
+        }
+      }
+
+      label {
+        position: absolute;
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+      input {
+        width: 100%;
+        background-color: $blue-normal;
+        border: none;
+        padding: 1.4rem 3.2rem;
+        border-radius: 2.8rem;
+
+        font-family: "Chivo";
+        font-size: 1.4rem;
+        line-height: 2.8rem;
+        color: $white-normal;
+        font-weight: 700;
+        outline: none;
+
+        @include responsive(xs) {
+          margin-bottom: 1.6rem;
+          padding: 0.9rem 3.2rem;
+        }
+
+        &::placeholder {
+          color: $white-normal;
+          opacity: 0.5;
+        }
+      }
+
+      .info {
+        font-family: "Chivo", sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+        position: absolute;
+        left: 3.2rem;
+        bottom: -6rem;
+
+        @include responsive(xs) {
+          bottom: 2.6rem;
+        }
+      }
+
+      .btn {
+        position: absolute;
+        right: 0.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+
+        @include responsive(xs) {
+          position: relative;
+          width: 100%;
+          right: 0;
+          top: 0;
+          transform: translateY(0);
+        }
+      }
+    }
+
+    .plataform {
+      max-width: 53.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @include responsive(xs) {
+        max-width: 100%;
+        order: 3;
+        margin-bottom: 4.8rem;
+      }
+
+      li {
+        &:nth-child(1) {
+          @include responsive(xs) {
+            max-width: 5.5rem;
+          }
+        }
+
+        &:nth-child(2) {
+          @include responsive(xs) {
+            max-width: 4.5rem;
+          }
+        }
+
+        &:nth-child(3) {
+          @include responsive(xs) {
+            max-width: 7.2rem;
+          }
+        }
+
+        &:nth-child(4) {
+          @include responsive(xs) {
+            max-width: 7.5rem;
+          }
+        }
+      }
+    }
+  }
+}
