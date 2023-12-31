@@ -18,10 +18,11 @@ It was built as proposed in the design, using:
 - HTML
 - CSS
 - JavaScript
+- Sass
 
 ## Stack
 
-**Front-end:** HTML, CSS, JavaScript
+**Front-end:** HTML, CSS, JavaScript, Sass
 
 ## License
 
